@@ -179,7 +179,7 @@ const Seller = ({ props }) => {
 
 
 
-                                                                    axios.post('http://localhost:4000/api/signup/add', {
+                                                                    axios.post('http://13.42.13.166:4000/api/signup/add', {
                                                                         name: name,
                                                                         phone: phone,
 
@@ -467,7 +467,7 @@ const Seller = ({ props }) => {
     const [search, setsearch] = useState('val')
     const [k, setk] = useState(0)
     function deleted(val) {
-        axios.post('http://localhost:4000/api/signup/delete', {
+        axios.post('http://13.42.13.166:4000/api/signup/delete', {
             _id: val
         }).then(res => {
             console.log(res)
