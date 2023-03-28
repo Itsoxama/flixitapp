@@ -10,11 +10,11 @@ const Admin = () => {
   const [Users, setUsers] = useState()
   const [Sellers, setSellers] = useState()
 useEffect(() => {
-  axios.get('http://localhost:4000/api/signup/getallusers').then((res)=>{
+  axios.get('http://13.42.13.166:4000/api/signup/getallusers').then((res)=>{
 
     setUsers(res.data.users)
     
-  axios.get('http://localhost:4000/api/client/getallusers').then((res2)=>{
+  axios.get('http://13.42.13.166:4000/api/client/getallusers').then((res2)=>{
     console.log(res2.data)
     setSellers(res2.data.users)
   })
